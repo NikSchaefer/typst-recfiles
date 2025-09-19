@@ -30,7 +30,7 @@ For package registry (when available):
 
 // Display all records
 #for (i, record) in records.enumerate() {
-  [*Record #(i + 1):*]
+  [Record #(i + 1):]
   for (field, value) in record {
     [- #field: #value]
   }
@@ -106,5 +106,5 @@ Results in:
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
 
