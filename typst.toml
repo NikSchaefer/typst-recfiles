@@ -1,0 +1,19 @@
+[package]
+name = "recfiles"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Nik Schaefer"]
+license = "MIT"
+description = "A simple parser for recfiles (recutils) data format in Typst"
+repository = "https://github.com/nikschaefer/typst-recfiles"
+keywords = ["parser", "data", "recfiles", "recutils"]
+categories = ["text", "data"]
+disciplines = ["computer-science"]
+compiler = "0.11.0"
+
+[package.exclude]
+[
+  "*.pdf",
+  "demo.typ",
+  "test.rec"
+]

@@ -1,0 +1,39 @@
+# Sample employee database
+
+%rec: Employee
+%mandatory: Name
+
+Name: Alice Johnson
+Age: 32
+Email: alice.johnson@company.com
+Department: Engineering
+Salary: 95000
+Skills: Python
+Skills: JavaScript
+Skills: React
+
+Name: Bob Chen
+Age: 28
+Email: bob.chen@company.com
+Department: Design
+Salary: 75000
+Skills: Figma
+Skills: Adobe Creative Suite
+
+Name: Carol Martinez
+Age: 35
+Email: carol.martinez@company.com
+Department: Engineering
+Salary: 110000
+Skills: Go
+Skills: Kubernetes
+Skills: Docker
+
+Name: David Kim
+Age: 29
+Email: david.kim@company.com
+Department: Marketing
+Salary: 68000
+Skills: Analytics
+Skills: SEO
+Skills: Content Strategy

@@ -1,0 +1,117 @@
+# Test recfile for testing recutils integration
+# This file contains various record types and field combinations
+
+%rec: Person
+%mandatory: Name
+%type: Age int
+%type: Email email
+
+Name: John Doe
+Age: 30
+Email: john.doe@example.com
+Department: Engineering
+Salary: 75000
+
+Name: Jane Smith
+Age: 28
+Email: jane.smith@example.com
+Department: Marketing
+Salary: 65000
+
+Name: Bob Wilson
+Age: 35
+Email: bob.wilson@example.com
+Department: Engineering
+Salary: 85000
+
+%rec: Project
+%mandatory: Title Status
+%type: Budget real
+%type: StartDate date
+%type: Completed bool
+
+Title: Website Redesign
+Status: In Progress
+Budget: 50000.00
+StartDate: 2024-01-15
+Owner: John Doe
+Completed: false
+
+Title: Mobile App Development
+Status: Completed
+Budget: 120000.00
+StartDate: 2023-06-01
+Owner: Jane Smith
+Completed: true
+
+Title: Database Migration
+Status: Planning
+Budget: 25000.00
+StartDate: 2024-03-01
+Owner: Bob Wilson
+Completed: false
+
+%rec: Task
+%mandatory: Description Priority
+%type: DueDate date
+%type: EstimatedHours int
+
+Description: Implement user authentication
+Priority: High
+DueDate: 2024-02-01
+EstimatedHours: 40
+AssignedTo: John Doe
+Project: Website Redesign
+
+Description: Design mobile UI mockups
+Priority: Medium
+DueDate: 2024-01-20
+EstimatedHours: 20
+AssignedTo: Jane Smith
+Project: Mobile App Development
+
+Description: Create database schema
+Priority: High
+DueDate: 2024-03-15
+EstimatedHours: 30
+AssignedTo: Bob Wilson
+Project: Database Migration
+
+%rec: Meeting
+%mandatory: Title Date
+%type: Date date
+%type: Duration int
+
+Title: Sprint Planning
+Date: 2024-01-08
+Duration: 60
+Attendees: John Doe
+Attendees: Jane Smith
+Attendees: Bob Wilson
+Location: Conference Room A
+
+Title: Client Review
+Date: 2024-01-10
+Duration: 90
+Attendees: Jane Smith
+Attendees: Bob Wilson
+Location: Virtual
+
+%rec: Equipment
+%mandatory: Name Type
+%type: PurchaseDate date
+%type: Cost real
+
+Name: MacBook Pro 16"
+Type: Laptop
+PurchaseDate: 2023-09-15
+Cost: 2499.99
+AssignedTo: John Doe
+SerialNumber: ABC123XYZ
+
+Name: Dell Monitor 27"
+Type: Monitor
+PurchaseDate: 2023-10-01
+Cost: 299.99
+AssignedTo: Jane Smith
+SerialNumber: DEF456UVW
