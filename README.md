@@ -26,7 +26,7 @@ For package registry (when available):
 #import "lib.typ": recfile
 
 // Load records from a recfile
-#let records = recfile("data.rec")
+#let records = recfile(read("data.rec"))
 
 // Display all records
 #for (i, record) in records.enumerate() {
@@ -40,19 +40,19 @@ For package registry (when available):
 
 ## API Reference
 
-### `recfile(filename)`
+### `recfile(content)`
 
-Parses a recfile and returns an array of records.
+Parses recfile content and returns an array of records.
 
 **Parameters:**
-- `filename` (string): Path to the recfile to parse
+- `content` (string): The recfile content to parse (use `read(filename)` to load from file)
 
 **Returns:**
 - Array of dictionaries, where each dictionary represents a record with field-value pairs
 
 **Example:**
 ```typst
-#let data = recfile("employees.rec")
+#let data = recfile(read("employees.rec"))
 // Returns: (
 //   (Name: "John Doe", Age: "30", Email: "john@example.com"),
 //   (Name: "Jane Smith", Age: "28", Email: "jane@example.com")

@@ -1,7 +1,6 @@
 // Simple recfile parser - loads data into basic Typst structures
 
-#let recfile(filename) = {
-  let content = read(filename)
+#let recfile(content) = {
   let lines = content.split("\n")
   let records = ()
   let current-record = (:)

@@ -1,7 +1,7 @@
 #import "../lib.typ": recfile
 
 // Basic usage example
-#let records = recfile("../test.rec")
+#let records = recfile(read("../test.rec"))
 
 = Recfiles Package Example
 
@@ -12,7 +12,7 @@ This document demonstrates the basic usage of the recfiles package.
 ```typst
 #import "@preview/recfiles:0.1.0": recfile
 
-#let records = recfile("data.rec")
+#let records = recfile(read("data.rec"))
 ```
 
 == Basic Record Display

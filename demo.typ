@@ -1,7 +1,7 @@
 #import "lib.typ": recfile
 
 // Load the test recfile
-#let records = recfile("test.rec")
+#let records = recfile(read("test.rec"))
 
 = Simple Recfile Demo
 

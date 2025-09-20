@@ -1,7 +1,7 @@
 #import "../lib.typ": recfile
 
 // Advanced filtering and processing example
-#let employees = recfile("employees.rec")
+#let employees = recfile(read("employees.rec"))
 
 = Employee Directory
 
